@@ -1,0 +1,6 @@
+{
+  "name": "Calculadora Python Interativa & Código Documentado",
+  "description": "Calculadora completa em Python com operações básicas (soma, subtração, multiplicação e divisão), código 100% comentado para iniciantes, terminal interativo de execução e guia de conceitos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
