@@ -11,6 +11,7 @@ import { VisualSimulator } from './components/VisualSimulator';
 import { OperatorGuide } from './components/OperatorGuide';
 import { LocalExecutionGuide } from './components/LocalExecutionGuide';
 import { QuizSection } from './components/QuizSection';
+import { ReadmeViewer } from './components/ReadmeViewer';
 import { pythonCalculatorCodes, PythonCodeVariant } from './data/pythonCodes';
 import { Terminal, Download, Code2, Cpu, Calculator, CheckCircle2, BookOpen } from 'lucide-react';
 
@@ -185,6 +186,18 @@ export default function App() {
           </button>
 
           <button
+            onClick={() => setActiveTab('readme')}
+            className={`inline-flex items-center gap-2 px-4 py-2 text-xs font-medium rounded-lg transition-all cursor-pointer whitespace-nowrap shrink-0 ${
+              activeTab === 'readme'
+                ? 'bg-slate-800 text-emerald-400 shadow-sm border border-slate-700/80'
+                : 'text-slate-400 hover:text-slate-200'
+            }`}
+          >
+            <BookOpen className="w-4 h-4 text-sky-400" />
+            <span>README.md (GitHub)</span>
+          </button>
+
+          <button
             onClick={() => setActiveTab('quiz')}
             className={`inline-flex items-center gap-2 px-4 py-2 text-xs font-medium rounded-lg transition-all cursor-pointer whitespace-nowrap shrink-0 ${
               activeTab === 'quiz'
@@ -220,6 +233,8 @@ export default function App() {
           {activeTab === 'guia_local' && (
             <LocalExecutionGuide onDownloadCode={() => handleDownloadCode(currentVariant)} />
           )}
+
+          {activeTab === 'readme' && <ReadmeViewer />}
 
           {activeTab === 'quiz' && <QuizSection />}
         </div>
