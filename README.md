@@ -1,6 +1,6 @@
 # 🧮 Calculadora em Python (Didática & 100% Documentada)
 
-> Projeto de uma calculadora completa em Python desenvolvida especialmente para fins de estudo e fixação dos conceitos fundamentais da linguagem: funções, tipos de dados, condicionais, laços de repetição e tratamento de erros.
+> Projeto realizado durante a Imersão Alura de uma calculadora completa em Python desenvolvida especialmente para fins de estudo e fixação dos conceitos fundamentais da linguagem: funções, tipos de dados, condicionais, laços de repetição e tratamento de erros.
 
 ---
 
